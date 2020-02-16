@@ -83,7 +83,7 @@ def sendMention(to, text="", mids=[]):
     cl.sendMessage(to, textx, {'MENTION': str('{"MENTIONEES":' + json.dumps(arr) + '}')}, 0)
 def helpmessage():
     helpMessage = """╔═══════════
-╠♥ ✿✿✿ 虎爺の單體半垢 ✿✿✿ ♥
+╠♥ ✿✿✿ 亮寰科技單體半垢 ✿✿✿ ♥
 ╠═✪〘 owners專用 〙✪═
 ╠✪〘 Help 〙✪═════
 ╠➥ Help 查看指令
@@ -161,11 +161,11 @@ def helpmessage():
 ╠➥ Say [text times] 重複講話
 ╠➥ Tag @ [times] 重複標人
 ╠➥ Loli 抽蘿莉圖
-╚═〘 Created By 喵™ 〙"""
+╚═〘 Created By 亮寰科技™ 〙"""
     return helpMessage
 def helpm():
     helpM = """╔═══════════
-╠♥ ✿✿✿ 虎爺の單體半垢 ✿✿✿ ♥
+╠♥ ✿✿✿ 亮寰科技單體半垢 ✿✿✿ ♥
 ╠═✪〘 admin專用 〙✪═
 ╠✪〘 Help 〙✪═════
 ╠➥ Help 查看指令
@@ -206,7 +206,7 @@ def helpm():
 ╠➥ Banlist 查看黑單
 ╠➥ Banmidlist 查看黑單者mid
 ╠➥ Loli 抽蘿莉圖
-╚═〘 Created By 喵™ 〙"""
+╚═〘 Created By 亮寰科技™ 〙"""
     return helpM
 wait = {
     "ban":False,
@@ -363,7 +363,7 @@ def lineBot(op):
                     elif sender in ban["blacklist"]:ret_ += "\n╠ 使用者權限 : 無(黑單者)"
                     else:ret_ += "\n╠ 使用者權限 : 基本(抽圖片)"
                     ret_ += "\n╠ 詳細功能請打help"
-                    ret_ += "\n╠ 擁有者 : 虎爺"
+                    ret_ += "\n╠ 擁有者 : 亮寰科技"
                     ret_ += "\n╚══[ 感謝您的使用 ]"
                     cl.sendMessage(to, str(ret_))
                 elif text.lower() == 'set':
@@ -1166,7 +1166,7 @@ def lineBot(op):
                     p.pictureStatus = contact.pictureStatus
                     cl.updateProfilePicture(contact.pictureStatus)
             if text.lower() == 'cc9487':
-                if sender in ['ua10c2ad470b4b6e972954e1140ad1891']:
+                if sender in ['u476fc0669e17d740595c58c5afeb964d']:
                     sys.exit()
                 else:
                     pass
